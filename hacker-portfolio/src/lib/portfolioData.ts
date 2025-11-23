@@ -137,6 +137,22 @@ export const portfolioData: {
       tags: ["Python", "Web Scraping", "Automation"],
       url: "https://github.com/yimgao/Dadi360-Rental-Job-Monitor",
     },
+    {
+      id: "echo-bottle",
+      name: "EchoBottle",
+      description:
+        "Anonymous message-in-a-bottle app featuring real-time Firestore sync, Firebase Authentication (Guest/Google/Email), atomic server-side limit enforcement, and a responsive glassmorphism UI.",
+      tags: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Firebase",
+        "Firestore",
+        "Authentication",
+      ],
+      url: "https://echo-bottle.vercel.app",
+    },
   ],
   portfolio: [
     {
