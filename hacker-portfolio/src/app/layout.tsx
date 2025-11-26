@@ -29,12 +29,21 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     metadataBase: new URL(url),
     keywords: Array.isArray(site.keywords) ? (site.keywords as string[]) : undefined,
+    icons: {
+      icon: [
+        { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-64.png", sizes: "64x64", type: "image/png" },
+        { url: "/favicon-128.png", sizes: "128x128", type: "image/png" },
+        { url: "/favicon-256.png", sizes: "256x256", type: "image/png" },
+      ],
+      apple: "/favicon-256.png",
+    },
     openGraph: {
       title,
       description,
       type: "website",
       url,
-      images: [{ url: ogImage }],
+      images: [{ url: "/og-image.png" }],
     },
     other: site.author ? { author: site.author as string } : undefined,
   };
